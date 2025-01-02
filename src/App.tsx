@@ -1,14 +1,11 @@
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import React, {JSX} from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {MainRouter} from './router';
 
-const styles = StyleSheet.create({
-  container: { flex: 1 },
-});
-
-export default function App(): React.JSX.Element {
+export default function App(): JSX.Element {
   return (
-    <View style={styles.container}>
-      <Text>Hello World!</Text>
-    </View>
+      <NavigationContainer>
+          <MainRouter />
+      </NavigationContainer>
   );
 }
