@@ -1,6 +1,7 @@
 import React, {JSX} from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {MyHeader} from '../components';
+import {DrawerModal} from '../screens';
 import {RedRouter} from './index';
 
 const Drawer = createDrawerNavigator();
@@ -8,6 +9,7 @@ const Drawer = createDrawerNavigator();
 export function DrawerRouter(): JSX.Element {
   return (
     <Drawer.Navigator
+      drawerContent={() => <DrawerModal />}
       screenOptions={({navigation}: any) => {
         const headerShown = navigation.getState().routes
           ? navigation.getState().routes?.[navigation.getState().index].state?.routes?.[1]?.name === undefined

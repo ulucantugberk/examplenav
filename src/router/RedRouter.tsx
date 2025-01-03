@@ -15,7 +15,7 @@ export function RedRouter(): JSX.Element {
           lazy: true,
         };
       }}>
-      <Stack.Screen name="RedScreen" component={RedScreen} />
+      <Stack.Screen name="RedScreen" component={RedScreen} options={{headerShown: false}} />
       <Stack.Screen name="PinkScreen" component={PinkScreen} />
     </Stack.Navigator>
   );

@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {Dimensions, Pressable, StyleSheet, Text, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {color, useSharedStyles} from '../constants';
+import {color, useSharedStyles} from '../../constants';
 
 const searchStyles = StyleSheet.create({
   container: {

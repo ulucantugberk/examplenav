@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import {View} from 'react-native';
-import {color, useSharedStyles} from '../constants';
+import {color, useSharedStyles} from '../../constants';
 
 export const BlackScreen: FC = () => {
   const styles = useSharedStyles();
